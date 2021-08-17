@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>forms</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="step3">Step 1: Account</td>
+        <td class="step3">step 2: Personal Details</td>
+        <td class="last">step 3: Your Review</td>
+      </tr>
+    </table>
+    <form action="">
+      <fieldset>
+        <legend>Your Review</legend>
+
+        <div class="margin">
+          <label for="how">How did you hear about us?</label>
+          <select name="how did you know about us" id="how">
+            <option value="social app">Social App</option>
+            <option value="newspaper" selected="">Newspaper</option>
+            <option value="Through Friend">Through Friend</option>
+          </select>
+        </div>
+
+        <div class="margin">
+          <label for="visit">Would you visit again?</label>
+          <label for="">
+            <input type="radio" name="visit again" value="yes" id="" />
+            Yes
+          </label>
+          <label for="">
+            <input type="radio" name="visit again" value="no" id="" />
+            No
+          </label>
+          <label for="">
+            <input type="radio" name="visit again" value="Maybe" id="" />
+            Maybe
+          </label>
+        </div>
+
+        <div class="margin">
+          <label for="comment">Comments:</label> <br />
+          <textarea
+            name="comments"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Enter your comments here"
+          ></textarea>
+        </div>
+
+        <div class="margin">
+          <label for="doc">Documents:</label> <br />
+          <input type="file" name="documents" id="doc" />
+        </div>
+
+        <div class="margin">
+          <input type="checkbox" name="sign me up" id="s" />
+          <label for="s">Sign me up for email updates</label>
+        </div>
+        <div class="margin">
+          <a href="step2.html">
+            <img src="images/back.png" class="st2img" alt="back image"
+          /></a>
+          <a href="#" onclick="alert('Thank you!')">
+            <img src="images/submit.png" class="st2img" alt="submit image"
+          /></a>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
