@@ -37,19 +37,20 @@ a {
 }
 
 /* step1 css */
-table {
-  /* border: 1px solid black; */
-  /* border-radius: 5px; */
+
+/* table {
+
   width: 800px;
   border-collapse: collapse;
   margin: 30px auto;
-}
+} */
 td {
   /* border: 1px solid black; */
-  padding: 8px;
+  padding: 12px;
   font-size: 20px;
   text-align: center;
   /* border-radius: 2px; */
+  width: 250px;
 }
 td.step1 {
   background-color: lightgray;
@@ -98,3 +99,58 @@ td.step3 {
 td.last {
   background-color: rgba(94, 143, 207, 0.781);
 }
+/* flex */
+tr.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-grow: 1;
+  /* flex: ; */
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: ; */
+  /* flex-direction: column; */
+}
+
+.flex1 {
+  display: flex;
+}
+
+/* mediaquery */
+@media only screen and (max-width: 800px) {
+  form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  td {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 450px) {
+    p.width {
+      width: 100%;
+    }
+  }
+/* @media only screen and (max-width: 812px) {
+  tr {
+    display: flex;
+  }
+  td.one {
+    flex-basis: 350px;
+  }
+  td.two {
+    flex-basis: 350px;
+  }
+} */
